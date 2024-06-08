@@ -12,11 +12,18 @@
     <!--match_parent= Toda Tela-->
     <!--wrap_content= tamanho conteudo-->
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/peso"
+        android:text="Peso:" />
 
     <EditText
+        android:id="@+id/peso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Peso em Kg"
+        android:imeActionLabel="Peso:"
         android:inputType="numberDecimal" />
 
     <Space
@@ -24,7 +31,14 @@
         android:layout_height="wrap_content"
         android:minHeight="32dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/altura"
+        android:text="Altura:" />
+
     <EditText
+        android:id="@+id/altura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Altura em m"
@@ -38,12 +52,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IMC" />
+        android:text="IMC:" />
 
     <TextView
+        android:id="@+id/imc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0.0" />
+        android:text="" />
 
     <Space
         android:layout_width="match_parent"
@@ -56,6 +71,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/calcula"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -68,12 +84,16 @@
             android:layout_height="wrap_content" />
 
         <Button
+            android:id="@+id/limpar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
             android:text="Limpar"
             android:textColor="@color/black" />
+
     </LinearLayout>
+
+
 
 </LinearLayout>
